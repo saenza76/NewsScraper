@@ -8,7 +8,9 @@ var mongoose = require('mongoose');
 var cheerio = require('cheerio');
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://heroku_4nbj8f19:itu2r1dosoq7jir7aj8ajrnoqq@ds127928.mlab.com:27928/heroku_4nbj8f19");
+mongoose.connect("mongodb://localhost/scraperhw");
+// heroku connection that wont work: 
+ // mongoose.connect("mongodb://heroku_4nbj8f19:itu2r1dosoq7jir7aj8ajrnoqq@ds127928.mlab.com:27928/heroku_4nbj8f19");
 var db = mongoose.connection;
 
 // Show any mongoose errors
